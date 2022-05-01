@@ -5,4 +5,4 @@ This is an Android Application that integrates TopOn mediation and can show Unit
 
 This App supports Rewarded Video and full-screen Interstitial ads. After a rewarded ad is completed, a Toast text will show the counter of completed videos.
 
-The log from my android device also be pushed in this project.
+The log from my android device is also pushed in this repository.
