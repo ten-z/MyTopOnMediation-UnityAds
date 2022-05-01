@@ -1,0 +1,56 @@
+apply plugin: 'com.android.application'
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+    //Anythink(Core)
+    maven {
+        url "https://anythink.jfrog.io/artifactory/android_sdk"
+    }
+
+}
+
+android {
+    compileSdkVersion 29
+
+    defaultConfig {
+        applicationId "com.zt.mytopondemo"
+        minSdkVersion 23
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled = true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'com.google.android.material:material:1.4.0'
+
+    //Anythink (Necessary)
+    api "com.anythink.sdk:core:5.9.32"
+    api "com.anythink.sdk:nativead:5.9.32"
+    api "com.anythink.sdk:banner:5.9.32"
+    api "com.anythink.sdk:interstitial:5.9.32"
+    api "com.anythink.sdk:rewardedvideo:5.9.32"
+    api "com.anythink.sdk:splash:5.9.32"
+
+    //Androidx (Necessary)
+    api "androidx.appcompat:appcompat:1.1.0"
+
+    //UnityAds
+    api "com.anythink.sdk:adapter-unityads:5.9.32"
+    api "com.unity3d.ads:unity-ads:4.0.0"
+}

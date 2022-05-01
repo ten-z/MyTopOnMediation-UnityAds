@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_initialize"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="Initialize"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:background="#D38C25"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/tv_load_interstitial_ad"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="load interstitial ad"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:background="#D38C25"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/tv_show_interstitial_ad"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="show interstitial ad"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:background="#D38C25"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/tv_load_rewarded_video_ad"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="load rewarded video ad"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:background="#D38C25"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/tv_show_rewarded_video_ad"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="show rewarded video ad"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:background="#D38C25"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
